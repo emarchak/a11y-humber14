@@ -31,7 +31,7 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: black;
-  font-family: "tradegothic", serif;
+  font-family: "HelveticaNeue", sans-serif;
   line-height: 0.9em;
   letter-spacing: 0.02em;
   text-transform: none;
@@ -137,7 +137,13 @@ body {
   background-repeat: no-repeat;
   background-position: 95% 95%; }
   body .reveal h1, body .reveal h2, body .reveal h3, body .reveal h4, body .reveal h5, body .reveal h6 {
-    font-weight: bold; }
+    font-weight: bold;
+    text-shadow: none;
+    line-height: 1.5; }
+  body .reveal img {
+    width: 60%; }
+  body .reveal .lite {
+    opacity: 0.25; }
 
 .pink body,
 .teal body,
@@ -145,7 +151,7 @@ body {
 .orange body,
 .black body {
   background-image: url("/img/mp_logo_wt.png");
-  background-color: #5F5CB1; }
+  background-color: black; }
   .pink body .reveal,
   .teal body .reveal,
   .purple body .reveal,
@@ -178,6 +184,20 @@ body {
     .black body .reveal h5,
     .black body .reveal h6 {
       color: #fff; }
+    .pink body .reveal a,
+    .pink body .reveal a:not(.image),
+    .teal body .reveal a,
+    .teal body .reveal a:not(.image),
+    .purple body .reveal a,
+    .purple body .reveal a:not(.image),
+    .orange body .reveal a,
+    .orange body .reveal a:not(.image),
+    .black body .reveal a,
+    .black body .reveal a:not(.image) {
+      color: black; }
+
+.no-logo body {
+  background-image: none !important; }
 
 .pink body {
   background-color: #ea3d67; }
@@ -186,10 +206,21 @@ body {
   background-color: #58c0a2; }
 
 .purple body {
-  background-color: #5F5CB1; }
-
-.black body {
-  background-color: #000000; }
+  background-color: #5f5cb1; }
 
 .orange body {
   background-color: #f05a28; }
+
+.black body .reveal a,
+.black body .reveal a:not(.image) {
+  color: #f05a28; }
+
+.reveal img,
+.reveal .nude {
+  background-color: transparent !important;
+  box-shadow: 0 0 0 transparent !important;
+  border-width: 0 !important; }
+.reveal .left {
+  float: left; }
+.reveal .right {
+  float: right; }
