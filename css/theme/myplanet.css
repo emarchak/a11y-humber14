@@ -139,11 +139,23 @@ body {
   body .reveal h1, body .reveal h2, body .reveal h3, body .reveal h4, body .reveal h5, body .reveal h6 {
     font-weight: bold;
     text-shadow: none;
-    line-height: 1.5; }
+    line-height: 1.25; }
+  body .reveal h1 {
+    font-size: 3.27em;
+    line-height: 1; }
+  body .reveal h2 {
+    font-size: 1.61em; }
+  body .reveal h3 {
+    font-size: 1em; }
+  body .reveal h4 {
+    font-size: 1em;
+    font-style: italic; }
   body .reveal img {
     width: 60%; }
   body .reveal .lite {
     opacity: 0.25; }
+  body .reveal code {
+    font-family: Consolas; }
 
 .pink body,
 .teal body,
