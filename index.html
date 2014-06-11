@@ -20,8 +20,14 @@
 		<!-- For syntax highlighting -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+
 		<script>
+  		//-- Fix for odd redirect behaviour
+  		if (window.location.hash == '#/#_=_') {
+    		var redirect = (window.location.href.replace(window.location.hash, '');
+    		window.location.replace(redirect);
+  		}
+  		//-- If the query includes 'print-pdf', include the PDF print sheet
 			if( window.location.search.match( /print-pdf/gi ) ) {
 				var link = document.createElement( 'link' );
 				link.rel = 'stylesheet';
@@ -218,7 +224,10 @@
         <section>
         <h2>Opportunities to Learn More</h2>
         <ul>
-          <li><a href="http://www.w3.org/TR/wai-aria/">W3C Accessible Rich Internet Guidelines (ARIA)</a></li>
+          <li><a href="http://www.w3.org/TR/wai-aria/">W3C Accessible Rich Internet Guidelines (ARIA)</a>
+            <ul><li><a href="https://www.webkit.org/blog/3302/aria_and_accessibility_inspector/">A working example of ARIA interactivity from webkit.org</a></li></ul>
+          </li>
+
           <li><a href="http://www.w3.org/TR/WCAG20/">W3C Web Content Accessibility 2.0 Guidelines</a></li>
           <li><a href="http://www.w3.org/WAI/">W3C Web Accessibility Initiative</a></li>
           <li><a href="http://simplyaccessible.com/">Simply Accessible Blog</a></li>
